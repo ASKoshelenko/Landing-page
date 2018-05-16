@@ -153,6 +153,19 @@ button {
 	color: rgba(255, 255, 255, .7);
 }
 /* ===== Lets talk end ===== */
+/* ===== Why chose us start ===== */
+.advantage-icon span{
+	font-size: 50px;
+}
+.advantage-title{
+	padding: 33px 0;
+}
+.why-choose-us .row + .row {
+	margin-top: 80px;
+}
+
+/* ===== Why chose us stop ===== */
+
 /* Custom style end */
 
 
