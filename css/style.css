@@ -135,7 +135,6 @@ button {
 /* Custom style start */
 /* ===== #Header start ===== */
 #header{
-	background-color: #777;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -163,7 +162,32 @@ button {
 	margin-left: 30px;
 }
 /* ===== #Header stop ===== */
-
+/* ===== Inner start ===== */
+.inner{
+	background: url('../img/inner-bg.jpg') no-repeat center / cover;
+	height: 100vh;
+	padding: 165px 15px 50px 15px;
+	text-align: center;
+}
+.inner::before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	/* нужен для того чтобы содержимое не 
+	вываливалось за пределы окна */
+	margin-left: -4px;
+}
+.inner-content{
+	display: inline-block;
+	vertical-align: middle;
+	/* max-width:  810px; */
+}
+.inner-title{
+	display: inline-block;
+	margin-bottom: 80px;	
+}
+/* ===== Inner stop ===== */
 /* ===== About studio start ===== */
 .about-studio .row + .row {
 	margin-top: 100px;
