@@ -1,3 +1,5 @@
+/* подключить шрифты opensans light
+dosis regular */
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -6,6 +8,8 @@
 html {
 	font-size: 15px;
 }
+/* для боди задать опенсанс лайт
+размер шрифта 15пикс? */
 body{
 	margin: 0;
 	color: #777;
@@ -35,12 +39,15 @@ button {
 	padding: 0 15px;
 	margin: auto;
 }
+/* специальный контейнер, который применяем где блоки на всю ширину */
 .container-fluid {
 	padding: 27px 15px;
 }
+/* компенсирующий марджин */
 .row {
 	margin: 0 -15px;
 }
+/* отмена обтекания, дабы не выпадали блоки */
 .row::after {
 	content: '';
 	clear: both;
@@ -101,6 +108,7 @@ button {
 }
 /* Default classes end */
 /* Default component start */
+/* класс который используем если нужны отступы сверху и снизу блока */
 .default-section {
 	padding: 135px 0;
 }
@@ -113,6 +121,8 @@ button {
 	letter-spacing: 0.2em;
 	border-radius: 2px;
 }
+/* через панель разработчика подогнать кнопки к размерам макета высоту
+в смысле */
 .btn-default {
 	/* стили для черной кнопки */
 	padding: 13px 20px;
@@ -136,18 +146,28 @@ button {
 }
 
 .title {
+	/* шрифт задаем самостоятельно */
+	/* фонт фемили досис регулар */
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	color: #111;
 	letter-spacing: .5em;
+	/* если применять стиль к заголовкам h1-4 то текст внутри будет болд
+	и надо задавать свойство ниже */
 	font-weight: normal;
 	margin-bottom: 75px;
 }
 .title.title-light {
+	/* дома задать досис лайт */
 	letter-spacing: .3em;
 }
 .title.title-white {
 	color: #fff;
+}
+.default-text{
+	/* заполнить дома */
+	/* задать шрифт опенсанс лайт размер 15пикс */
+	/* высоту строки пересчитать в условных единицах */
 }
 /* Default component end */
 /* Custom style start */
@@ -163,15 +183,14 @@ button {
 	height: 18px;
 	border-bottom: 1px solid white;
 }
-.company-name{
-	float: left;
+.logo span{
 	color: #fff;
 	font-size: 12px;
-	border-bottom: 1px solid white;
 }
 .header-nav{
 	float: right;
 	color: #fff;
+	text-transform: uppercase;
 }
 .header-nav li{
 	float: left;
@@ -213,6 +232,7 @@ button {
 .team-item-info span{
 	display: block;
 }
+/* дома надо задать шрифты размеры и отступы либо от картинки, либо от теста */
 /* ===== About studio end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper {
@@ -223,14 +243,20 @@ button {
 	margin-top: -32px;
 }
 .lets-talk .default-text {
+	/* белый цвет на 70% не прозрачный */
 	color: rgba(255, 255, 255, .7);
 }
 /* ===== Lets talk end ===== */
 /* ===== Why chose us start ===== */
+/* застилизировать страницу шрифты задавать через существующие классы
+в этом блоке */
 .advantage-icon span{
+	/* попробывать без спана задать размер иконки */
+	/* лучше задать отступ снизу */
 	font-size: 50px;
 }
 .advantage-title{
+	/* а здесь задать только отступ с низу */
 	padding: 33px 0;
 }
 .why-choose-us .row + .row {
