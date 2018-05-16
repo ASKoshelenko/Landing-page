@@ -36,7 +36,7 @@ button {
 	margin: auto;
 }
 .container-fluid {
-	padding: 0 15px;
+	padding: 27px 15px;
 }
 .row {
 	margin: 0 -15px;
@@ -133,6 +133,37 @@ button {
 }
 /* Default component end */
 /* Custom style start */
+/* ===== #Header start ===== */
+#header{
+	background-color: #777;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.logo{
+	float: left;
+	height: 18px;
+	border-bottom: 1px solid white;
+}
+.company-name{
+	float: left;
+	color: #fff;
+	font-size: 12px;
+	border-bottom: 1px solid white;
+}
+.header-nav{
+	float: right;
+	color: #fff;
+}
+.header-nav li{
+	float: left;
+}
+.header-nav li+li{
+	margin-left: 30px;
+}
+/* ===== #Header stop ===== */
+
 /* ===== About studio start ===== */
 .about-studio .row + .row {
 	margin-top: 100px;
