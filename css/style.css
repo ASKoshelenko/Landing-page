@@ -162,21 +162,21 @@ button {
 в смысле */
 .btn-default {
 	/* стили для черной кнопки */
-	padding: 13px 20px;
+	padding: 11px 20px;
 	background-color: rgba(50, 50, 50, .8);
 	color: #fff;
 	font-size: 0.8667rem;
 }
 .btn-large {
 	/* для кнопок серых и больших */
-	padding: 14px 40px;
+	padding: 12px 40px;
 	background-color: rgba(207, 207, 207, .8);
 	color: #111;
 	font-size: 0.9333rem;
 }
 .btn-small {
 	 /* для мал кнопок*/
-	 padding: 9px 15px;
+	 padding: 6px 15px;
 	 background-color: rgba(229, 229, 229, .8);
 	 color: #777;
 	 font-size: 0.7333rem;
