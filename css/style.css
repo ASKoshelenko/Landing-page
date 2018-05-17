@@ -41,7 +41,7 @@ button {
 }
 /* специальный контейнер, который применяем где блоки на всю ширину */
 .container-fluid {
-	padding: 27px 15px;
+	padding: 0 15px;
 }
 /* компенсирующий марджин */
 .row {
@@ -126,22 +126,22 @@ button {
 .btn-default {
 	/* стили для черной кнопки */
 	padding: 13px 20px;
-	background-color: rgba(51, 51, 51, .8);
+	background-color: rgba(50, 50, 50, .8);
 	color: #fff;
 	font-size: 0.8667rem;
 }
 .btn-large {
 	/* для кнопок серых и больших */
 	padding: 14px 40px;
-	background-color: rgba(207, 207, 207, 0.81);
-	color: rgba(17, 17, 17, .93);
+	background-color: rgba(207, 207, 207, .8);
+	color: #111;
 	font-size: 0.9333rem;
 }
 .btn-small {
 	 /* для мал кнопок*/
 	 padding: 9px 15px;
-	 background-color: rgba(229, 229, 229, .1);
-	 color: rgba(119, 119, 119, .53);
+	 background-color: rgba(229, 229, 229, .8);
+	 color: #777;
 	 font-size: 0.7333rem;
 }
 
@@ -160,37 +160,48 @@ button {
 .title.title-light {
 	/* дома задать досис лайт */
 	letter-spacing: .3em;
+	line-height: 1.7333em;
+	margin-bottom: 25px;
 }
 .title.title-white {
-	color: #fff;
+	color: rgba(255, 255, 255, .7);
 }
 .default-text{
-	/* заполнить дома */
 	/* задать шрифт опенсанс лайт размер 15пикс */
-	/* высоту строки пересчитать в условных единицах */
+	font-size: 1rem;
+	line-height: 1.7333em;
 }
 /* Default component end */
 /* Custom style start */
 /* ===== #Header start ===== */
 #header{
 	position: fixed;
-	top: 0;
+	top: 26px;
 	left: 0;
 	right: 0;
 }
+.logo-wrapper{
+	display: inline-block;
+	border-bottom: 1px solid #fff;
+}
 .logo{
+	/* шрифт опенсанс семиболд */
 	float: left;
 	height: 18px;
-	border-bottom: 1px solid white;
-}
-.logo span{
-	color: #fff;
-	font-size: 12px;
-}
-.header-nav{
-	float: right;
-	color: #fff;
 	text-transform: uppercase;
+	font-size: 0.8rem;
+	letter-spacing: 0.3em;
+	padding-bottom: 6px; 
+	color: #fff;
+}
+
+.header-nav{
+	/* шрифт опенсанс регулар */
+	float: right;
+	color: rgba(255, 255, 255, .75);
+	text-transform: uppercase;
+	font-size: 0.7333rem;
+	letter-spacing: 0.3em;
 }
 .header-nav li{
 	float: left;
@@ -203,7 +214,7 @@ button {
 .inner{
 	background: url('../img/inner-bg.jpg') no-repeat center / cover;
 	height: 100vh;
-	padding: 165px 15px 50px 15px;
+	padding: 165px 15px 0 15px;
 	text-align: center;
 }
 .inner::before{
@@ -218,19 +229,53 @@ button {
 .inner-content{
 	display: inline-block;
 	vertical-align: middle;
-	/* max-width:  810px; */
 }
-.inner-title{
-	display: inline-block;
-	margin-bottom: 80px;	
+.inner-title h1{
+	/* шрифт досис регулар */
+	font-size: 2rem;
+	letter-spacing: 1.7em;
+	color: rgba(254, 254, 254, .9);
+	text-transform: uppercase;
+	text-indent: 1.7em;
+	font-weight: normal;
+	padding-bottom: 90px;
+}
+.inner-subtitle{
+	/* шрифт опенсанс лайт */
+	font-size: 1.2667rem;
+	color: rgba(254, 254, 254, .68)
 }
 /* ===== Inner stop ===== */
 /* ===== About studio start ===== */
+blockquote p{
+	/* шрифт опенсанс лайт */
+	font-size: 1.6rem;
+	padding-bottom: 1.6em;
+}
+blockquote span{
+	/* шрифт опенсанс реглар */
+	text-transform: uppercase;
+	font-size: 0.7333rem;
+	letter-spacing: 0.2em;
+}
 .about-studio .row + .row {
 	margin-top: 100px;
 }
+.team-item-info{
+	/* шрифт досис регулар */
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+}
 .team-item-info span{
 	display: block;
+}
+.team-item-name{
+	font-size: 1rem;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+.team-item-role{
+	font-size: 0.8rem;
 }
 /* дома надо задать шрифты размеры и отступы либо от картинки, либо от теста */
 /* ===== About studio end ===== */
@@ -238,6 +283,9 @@ button {
 .lets-talk-wrapper {
 	padding-top: 140px;
 	padding-bottom: 140px;
+}
+.lets-talk-wrapper p{
+	padding-bottom: 40px;
 }
 .lets-talk-img {
 	margin-top: -32px;
@@ -250,14 +298,17 @@ button {
 /* ===== Why chose us start ===== */
 /* застилизировать страницу шрифты задавать через существующие классы
 в этом блоке */
-.advantage-icon span{
-	/* попробывать без спана задать размер иконки */
-	/* лучше задать отступ снизу */
-	font-size: 50px;
+.advantage-icon{
+	font-size: 48px;
+	padding-bottom: 35px;
 }
 .advantage-title{
-	/* а здесь задать только отступ с низу */
-	padding: 33px 0;
+	/* шрифт досис регулар */
+	padding-bottom: 33px;
+	font-size: 1rem;
+	letter-spacing: 0.4em;
+	color: #111;
+	text-transform: uppercase;
 }
 .why-choose-us .row + .row {
 	margin-top: 80px;
