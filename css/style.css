@@ -1,5 +1,45 @@
-/* подключить шрифты opensans light
-dosis regular */
+/* ============ Блок подключения шрифтов =============== */
+@font-face {
+    font-family: 'dosislight';
+    src: url('../fonts/dosis-light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'dosisregular';
+    src: url('../fonts/dosis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+/* ========= Конец блока подключения шрифтов ========= */
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -8,12 +48,10 @@ dosis regular */
 html {
 	font-size: 15px;
 }
-/* для боди задать опенсанс лайт
-размер шрифта 15пикс? */
 body{
+	font-family: 'open_sanslight', sans-serif;
 	margin: 0;
 	color: #777;
-	font-family: Arial, Helvetica, sans-serif;
 }
 a{
 	color: inherit;
@@ -113,8 +151,7 @@ button {
 	padding: 135px 0;
 }
 .btn {
-	/* общие стили для всех кнопок */
-	/* у всех кнопок шрифт OpenSans */
+	font-family: 'open_sansregular', sans-serif;
 	font-family: 'OpenSans', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
@@ -146,8 +183,7 @@ button {
 }
 
 .title {
-	/* шрифт задаем самостоятельно */
-	/* фонт фемили досис регулар */
+	font-family: 'dosisregular',sans-serif;
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	color: #111;
@@ -158,7 +194,7 @@ button {
 	margin-bottom: 75px;
 }
 .title.title-light {
-	/* дома задать досис лайт */
+	font-family: 'dosislight',sans-serif;
 	letter-spacing: .3em;
 	line-height: 1.7333em;
 	margin-bottom: 25px;
@@ -167,7 +203,7 @@ button {
 	color: rgba(255, 255, 255, .7);
 }
 .default-text{
-	/* задать шрифт опенсанс лайт размер 15пикс */
+	font-family: 'open_sanslight', sans-serif;
 	font-size: 1rem;
 	line-height: 1.7333em;
 }
@@ -185,7 +221,7 @@ button {
 	border-bottom: 1px solid #fff;
 }
 .logo{
-	/* шрифт опенсанс семиболд */
+	font-family: 'open_sanssemibold', sans-serif;
 	float: left;
 	height: 18px;
 	text-transform: uppercase;
@@ -196,7 +232,7 @@ button {
 }
 
 .header-nav{
-	/* шрифт опенсанс регулар */
+	font-family: 'open_sansregular', sans-serif;
 	float: right;
 	color: rgba(255, 255, 255, .75);
 	text-transform: uppercase;
@@ -231,7 +267,7 @@ button {
 	vertical-align: middle;
 }
 .inner-title h1{
-	/* шрифт досис регулар */
+	font-family: 'dosisregular', sans-serif;
 	font-size: 2rem;
 	letter-spacing: 1.7em;
 	color: rgba(254, 254, 254, .9);
@@ -241,19 +277,19 @@ button {
 	padding-bottom: 90px;
 }
 .inner-subtitle{
-	/* шрифт опенсанс лайт */
+	font-family: 'open_sanslight', sans-serif;
 	font-size: 1.2667rem;
 	color: rgba(254, 254, 254, .68)
 }
 /* ===== Inner stop ===== */
 /* ===== About studio start ===== */
 blockquote p{
-	/* шрифт опенсанс лайт */
+	font-family: 'open_sanslight', sans-serif;
 	font-size: 1.6rem;
 	padding-bottom: 1.6em;
 }
 blockquote span{
-	/* шрифт опенсанс реглар */
+	font-family: 'open_sansregular',sans-serif;
 	text-transform: uppercase;
 	font-size: 0.7333rem;
 	letter-spacing: 0.2em;
@@ -262,7 +298,7 @@ blockquote span{
 	margin-top: 100px;
 }
 .team-item-info{
-	/* шрифт досис регулар */
+	font-family: 'dosisregular', sans-serif;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 }
@@ -296,19 +332,18 @@ blockquote span{
 }
 /* ===== Lets talk end ===== */
 /* ===== Why chose us start ===== */
-/* застилизировать страницу шрифты задавать через существующие классы
-в этом блоке */
 .advantage-icon{
 	font-size: 48px;
 	padding-bottom: 35px;
 }
 .advantage-title{
-	/* шрифт досис регулар */
+	font-family: 'dosisregular', sans-serif;
 	padding-bottom: 33px;
 	font-size: 1rem;
 	letter-spacing: 0.4em;
 	color: #111;
 	text-transform: uppercase;
+	font-weight: normal;
 }
 .why-choose-us .row + .row {
 	margin-top: 80px;
