@@ -48,19 +48,19 @@
 html {
 	font-size: 15px;
 }
-body{
+body {
 	font-family: 'open_sanslight', sans-serif;
 	margin: 0;
 	color: #777;
 }
-a{
+a {
 	color: inherit;
 	text-decoration: none;
 }
-a:hover, a:active{
+a:hover, a:active {
 	text-decoration: none;
 }
-ul{
+ul {
 	list-style: none;
 }
 img {
@@ -77,7 +77,7 @@ button {
 	padding: 0 15px;
 	margin: auto;
 }
-/* специальный контейнер, который применяем где блоки на всю ширину */
+/* специальный контейнер, который применяем там, где блоки на всю ширину */
 .container-fluid {
 	padding: 0 15px;
 }
@@ -97,40 +97,40 @@ button {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.col-1{
+.col-1 {
 	width: 8.333333333%
 }
-.col-2{
+.col-2 {
 	width: 16.666666667%
 }
-.col-3{
+.col-3 {
 	width: 25%
 }
-.col-4{
+.col-4 {
 	width: 33.333333333%
 }
-.col-5{
+.col-5 {
 	width: 41.666666667%
 }
-.col-6{
+.col-6 {
 	width: 50%
 }
-.col-7{
+.col-7 {
 	width: 58.333333333%
 }
-.col-8{
+.col-8 {
 	width: 66.666666667%
 }
-.col-9{
+.col-9 {
 	width: 75%
 }
-.col-10{
+.col-10 {
 	width: 83.333333333%
 }
-.col-11{
+.col-11 {
 	width: 91.666666667%
 }
-.col-12{
+.col-12 {
 	width: 100%
 }
 /* Grid layout end */
@@ -146,7 +146,7 @@ button {
 }
 /* Default classes end */
 /* Default component start */
-/* класс который используем если нужны отступы сверху и снизу блока */
+/* класс который используем, если нужны отступы сверху и снизу блока */
 .default-section {
 	padding: 135px 0;
 }
@@ -158,8 +158,6 @@ button {
 	letter-spacing: 0.2em;
 	border-radius: 2px;
 }
-/* через панель разработчика подогнать кнопки к размерам макета высоту
-в смысле */
 .btn-default {
 	/* стили для черной кнопки */
 	padding: 11px 20px;
@@ -181,14 +179,13 @@ button {
 	 color: #777;
 	 font-size: 0.7333rem;
 }
-
 .title {
 	font-family: 'dosisregular',sans-serif;
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	color: #111;
 	letter-spacing: .5em;
-	/* если применять стиль к заголовкам h1-4 то текст внутри будет болд
+	/* если применять стиль к заголовкам h1-4, то текст внутри будет болд
 	и надо задавать свойство ниже */
 	font-weight: normal;
 	margin-bottom: 75px;
@@ -202,7 +199,7 @@ button {
 .title.title-white {
 	color: rgba(255, 255, 255, .7);
 }
-.default-text{
+.default-text {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 1rem;
 	line-height: 1.7333em;
@@ -210,28 +207,29 @@ button {
 /* Default component end */
 /* Custom style start */
 /* ===== #Header start ===== */
-#header{
+#header {
 	position: fixed;
 	top: 26px;
 	left: 0;
 	right: 0;
 }
-.logo-wrapper{
-	display: inline-block;
-	border-bottom: 1px solid #fff;
-}
-.logo{
+.logo {
 	font-family: 'open_sanssemibold', sans-serif;
 	float: left;
 	height: 18px;
 	text-transform: uppercase;
 	font-size: 0.8rem;
 	letter-spacing: 0.3em;
-	padding-bottom: 6px; 
 	color: #fff;
 }
-
-.header-nav{
+.logo::after {
+	content: '';
+	display: block;
+	height: 1px;
+	background: #fff;
+	width: 97%;
+}
+.header-nav {
 	font-family: 'open_sansregular', sans-serif;
 	float: right;
 	color: rgba(255, 255, 255, .75);
@@ -239,21 +237,21 @@ button {
 	font-size: 0.7333rem;
 	letter-spacing: 0.3em;
 }
-.header-nav li{
+.header-nav li {
 	float: left;
 }
-.header-nav li+li{
+.header-nav li+ li {
 	margin-left: 30px;
 }
 /* ===== #Header stop ===== */
 /* ===== Inner start ===== */
-.inner{
+.inner {
 	background: url('../img/inner-bg.jpg') no-repeat center / cover;
 	height: 100vh;
 	padding: 165px 15px 0 15px;
 	text-align: center;
 }
-.inner::before{
+.inner::before {
 	content: '';
 	display: inline-block;
 	height: 100%;
@@ -262,11 +260,11 @@ button {
 	вываливалось за пределы окна */
 	margin-left: -4px;
 }
-.inner-content{
+.inner-content {
 	display: inline-block;
 	vertical-align: middle;
 }
-.inner-title h1{
+.inner-title h1 {
 	font-family: 'dosisregular', sans-serif;
 	font-size: 2rem;
 	letter-spacing: 1.7em;
@@ -276,19 +274,19 @@ button {
 	font-weight: normal;
 	padding-bottom: 90px;
 }
-.inner-subtitle{
+.inner-subtitle {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 1.2667rem;
 	color: rgba(254, 254, 254, .68)
 }
 /* ===== Inner stop ===== */
 /* ===== About studio start ===== */
-blockquote p{
+blockquote p {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 1.6rem;
 	padding-bottom: 1.6em;
 }
-blockquote span{
+blockquote span {
 	font-family: 'open_sansregular',sans-serif;
 	text-transform: uppercase;
 	font-size: 0.7333rem;
@@ -297,20 +295,20 @@ blockquote span{
 .about-studio .row + .row {
 	margin-top: 100px;
 }
-.team-item-info{
+.team-item-info {
 	font-family: 'dosisregular', sans-serif;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 }
-.team-item-info span{
+.team-item-info span {
 	display: block;
 }
-.team-item-name{
+.team-item-name {
 	font-size: 1rem;
 	padding-top: 30px;
 	padding-bottom: 15px;
 }
-.team-item-role{
+.team-item-role {
 	font-size: 0.8rem;
 }
 /* дома надо задать шрифты размеры и отступы либо от картинки, либо от теста */
@@ -320,7 +318,7 @@ blockquote span{
 	padding-top: 140px;
 	padding-bottom: 140px;
 }
-.lets-talk-wrapper p{
+.lets-talk-wrapper p {
 	padding-bottom: 40px;
 }
 .lets-talk-img {
@@ -332,11 +330,11 @@ blockquote span{
 }
 /* ===== Lets talk end ===== */
 /* ===== Why chose us start ===== */
-.advantage-icon{
+.advantage-icon {
 	font-size: 48px;
 	padding-bottom: 35px;
 }
-.advantage-title{
+.advantage-title {
 	font-family: 'dosisregular', sans-serif;
 	padding-bottom: 33px;
 	font-size: 1rem;
@@ -348,16 +346,5 @@ blockquote span{
 .why-choose-us .row + .row {
 	margin-top: 80px;
 }
-
 /* ===== Why chose us stop ===== */
-
 /* Custom style end */
-
-
-
-
-
-
-
-
-
