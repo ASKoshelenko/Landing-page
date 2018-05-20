@@ -170,7 +170,7 @@ button {
 }
 .btn-large {
 	/* для кнопок серых и больших */
-	padding: 12px 40px;
+	padding: 12px 37px;
 	background-color: rgba(207, 207, 207, .8);
 	color: #111;
 	font-size: 0.9333rem;
@@ -197,7 +197,7 @@ button {
 	font-family: 'dosislight',sans-serif;
 	letter-spacing: .3em;
 	line-height: 1.7333em;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 .title.title-white {
 	color: rgba(255, 255, 255, .7);
@@ -328,13 +328,19 @@ blockquote span {
 	text-align: center;
 }
 .services-tab ul li.ui-state-active {
-	color: red;
+	color: #111;
 }
 .services-tab ul li span {
 	display: block;
+	font-size: 3.2rem;
+	color: rgba(17,17,17 0.5);
 }
 .services-tab ul li a span:last-child {
-	margin-top: 30px;
+	font-family: 'dosisregular', sans-serif;
+	margin-top: 33px;
+	font-size: 0.9333rem;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
 }
 /* ===== Services end ===== */
 /* ===== Lets talk start ===== */
@@ -359,8 +365,10 @@ blockquote span {
 }
 .portfolio-text {
 	text-align: center;
-	max-width: 600px;
+	max-width: 760px;
 	margin: auto;
+	font-size: 1rem;
+	line-height: 1.7333em;
 }
 .portfolio-tab::after {
 	content: '';
@@ -369,14 +377,19 @@ blockquote span {
 }
 .portfolio-tab ul{
 	text-align: center;
-	margin-bottom: 70px;
-	margin-top: 70px;
+	margin-bottom: 45px;
+	margin-top: 80px;
 }
 .portfolio-tab ul li{
+	font-family: 'dosisregular', sans-serif;
 	display: inline-block;
+	font-size: 0.8667 rem;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: rgba(17,17,17 0.5);
 }
 .portfolio-tab ul li.ui-state-active{
-	color: red;
+	color: #111;
 }
 .portfolio-tab ul li+ li{
 	margin-left: 80px;
@@ -384,7 +397,7 @@ blockquote span {
 .portfolio-item {
 	float: left;
 	width: 33.3333%;
-	padding: 4px;
+	padding: 3px 6px;
 }
 .portfolio-item img{
 	width: 100%;
@@ -415,8 +428,31 @@ blockquote span {
 }
 /* ===== Why chose us stop ===== */
 /* ===== Reviews start ===== */
-.reviews-carousel {
-	padding: 140px 0;
+.reviews {	
+	padding-top: 140px;
+}
+.reviews-title{
+	font-size: 2.1333rem;
+}
+.reviews-carousel{
+	padding-bottom: 140px;
+}
+.review-wrapper {
+	max-width: 735px;
+	margin: auto;	
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.6667em;
+	color: rgba(255,255,255, .75);
+}
+.review-wrapper span{
+
+	font-family: 'open_sansregular',sans-serif;
+	text-transform: uppercase;
+	font-size: 0.7333rem;
+	line-height: 2.5333em;
+	letter-spacing: 0.2em;
+	color: rgba(255,255,255, .3);
 }
 .slick-arrow {
 	position: absolute;
@@ -426,9 +462,11 @@ blockquote span {
 }
 .slick-arrow.slick-prev {
 	left: 0;
+	top: 0;
 }
 .slick-arrow.slick-next {
 	right: 0;
+	top: 0;
 }
 .slick-dots {
 	position: absolute;
@@ -439,7 +477,12 @@ blockquote span {
 }
 .slick-dots li {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
+}
+.slick-dots li::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
 }
 .slick-dots li + li {
 	margin-left: 5px;
