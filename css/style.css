@@ -150,6 +150,9 @@ button {
 .default-section {
 	padding: 135px 0;
 }
+.small-section {
+	padding: 70px 0;
+}
 .btn {
 	font-family: 'open_sansregular', sans-serif;
 	font-family: 'OpenSans', sans-serif;
