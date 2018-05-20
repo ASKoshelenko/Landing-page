@@ -350,6 +350,49 @@ blockquote span {
 	color: rgba(255, 255, 255, .7);
 }
 /* ===== Lets talk end ===== */
+/* ===== Portfolio start ===== */
+.portfolio{
+	padding-bottom: 15px;
+}
+.portfolio-text {
+	text-align: center;
+	max-width: 600px;
+	margin: auto;
+}
+.portfolio-tab::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.portfolio-tab ul{
+	text-align: center;
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+.portfolio-tab ul li{
+	display: inline-block;
+}
+.portfolio-tab ul li.ui-state-active{
+	color: red;
+}
+.portfolio-tab ul li+ li{
+	margin-left: 80px;
+}
+.portfolio-item {
+	float: left;
+	width: 33.3333%;
+	padding: 4px;
+}
+.portfolio-item img{
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.portfolio-item img:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+/* ===== Portfolio end ===== */
 /* ===== Why chose us start ===== */
 .advantage-icon {
 	font-size: 48px;
