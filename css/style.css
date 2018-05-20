@@ -314,6 +314,26 @@ blockquote span {
 }
 /* дома надо задать шрифты размеры и отступы либо от картинки, либо от теста */
 /* ===== About studio end ===== */
+/* ===== Services start ===== */
+.services-tab ul {
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+.services-tab ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+.services-tab ul li.ui-state-active {
+	color: red;
+}
+.services-tab ul li span {
+	display: block;
+}
+.services-tab ul li a span:last-child {
+	margin-top: 30px;
+}
+/* ===== Services end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper {
 	padding-top: 140px;
@@ -348,4 +368,48 @@ blockquote span {
 	margin-top: 80px;
 }
 /* ===== Why chose us stop ===== */
+/* ===== Reviews start ===== */
+.reviews-carousel {
+	padding: 140px 0;
+}
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.slick-arrow.slick-prev {
+	left: 0;
+}
+.slick-arrow.slick-next {
+	right: 0;
+}
+.slick-dots {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 0;
+}
+.slick-dots li {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.slick-dots li + li {
+	margin-left: 5px;
+}
+.slick-dots li button {
+	color: transparent;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	background-color: #ccc;
+}
+.slick-dots li.slick-active button {
+	background-color: transparent;
+	width: 9px;
+	height: 9px;
+}
+/* ===== Reviews end ===== */
 /* Custom style end */
