@@ -155,7 +155,7 @@ button {
 }
 .btn {
 	font-family: 'open_sansregular', sans-serif;
-	font-family: 'OpenSans', sans-serif;
+	line-height: 1.8571em;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 0.2em;
@@ -252,7 +252,7 @@ button {
 .inner {
 	background: url('../img/inner-bg.jpg') no-repeat center / cover;
 	height: 100vh;
-	padding: 165px 15px 0 15px;
+	padding: 15px 15px 0 15px;
 	text-align: center;
 }
 .inner::before {
@@ -287,6 +287,7 @@ button {
 /* ===== About studio start ===== */
 blockquote p {
 	font-family: 'open_sanslight', sans-serif;
+	line-height: 1.58333em;
 	font-size: 1.6rem;
 	padding-bottom: 1.6em;
 }
@@ -300,6 +301,7 @@ blockquote span {
 	margin-top: 100px;
 }
 .team-item-info {
+	padding-top: 30px;
 	font-family: 'dosisregular', sans-serif;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
@@ -308,8 +310,7 @@ blockquote span {
 	display: block;
 }
 .team-item-name {
-	font-size: 1rem;
-	padding-top: 30px;
+	font-size: 1rem;	
 	padding-bottom: 15px;
 }
 .team-item-role {
