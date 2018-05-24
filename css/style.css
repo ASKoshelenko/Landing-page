@@ -144,6 +144,9 @@ button {
 .bg-black {
 	background-color: #111;
 }
+.bg-lightgray {
+	background-color:rgb(248, 248, 248);
+}
 .mx-auto{
 	float: none;
 	margin-left: auto;
@@ -168,8 +171,8 @@ button {
 }
 .btn-default {
 	/* стили для черной кнопки */
-	padding: 11px 20px;
-	background-color: rgba(50, 50, 50, .8);
+	padding: 6px 20px;
+	background-color: rgba(50, 50, 50);
 	color: #fff;
 	font-size: 0.8667rem;
 }
@@ -242,6 +245,13 @@ button {
 	color: #777;
 	padding: 0 13px;
 	background-color: #fff;
+}
+.form-info{
+	color: #aaa;
+	font-weight: normal;
+	font-size: 0.74rem;
+	line-height: 2.3636em;
+	letter-spacing: 0.026em;
 }
 textarea.form-control {
 	min-height: 90px;
@@ -371,6 +381,9 @@ blockquote span {
 .services-tab ul li.ui-state-active {
 	color: #111;
 }
+.services-tab ul li a{
+	outline: 0;
+}
 .services-tab ul li span {
 	display: block;
 	font-size: 3.2rem;
@@ -434,6 +447,9 @@ blockquote span {
 }
 .portfolio-tab ul li+ li{
 	margin-left: 80px;
+}
+.portfolio-tab ul li a {
+	outline: 0;
 }
 .portfolio-item {
 	float: left;
@@ -542,7 +558,82 @@ blockquote span {
 	height: 9px;
 }
 /* ===== Reviews end ===== */
+/* === Latest news start === */
+.latest-news .container {
+	position: relative;
+}
+.latest-news .container a{
+	font-family: 'dosisregular', sans-serif;
+	font-size: 0.7333rem;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: #999;
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+.latest-news-item img{
+	margin-bottom: 30px;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.latest-news-item img:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.latest-news-item h3 {
+	font-family: 'dosisregular', sans-serif;
+	font-size: 1rem;
+	letter-spacing: 0.2em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #777;
+	margin-bottom: 15px;
+}
+.latest-news-signature {
+	font-family: 'dosisregular', sans-serif;
+	font-size: 0.7333rem;
+	letter-spacing: 0.4em;
+	color: #999;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.latest-news-item p {
+	margin-bottom: 28px;
+}
+/* === Latest news end === */
+/* ===== Subscribe start ===== */
+.subscribe-form-control {
+	width: 293px;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #777;
+	padding: 0 13px;
+	background-color: #fff;
+}
+.subscribe-form .form-info{
+	margin-top: 12px;
+}
+/* ===== Subscribe end ===== */
 /* ===== Contacts start ===== */
+.contact-title {
+	font-family: 'dosisregular', sans-serif;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	letter-spacing: 0.3em;
+	color: #777;
+}
+.contact-data {
+	font-family: 'dosisregular', sans-serif;
+	font-size: 1rem;
+	line-height: 1.6em;
+	color: #444;
+}
 .contact-item .rhomb-icon{
 	vertical-align: middle;
 }
@@ -568,5 +659,34 @@ blockquote span {
 .contact-form .form-control + .form-control {
 	margin-top: 10px;
 }
+.form-submit .form-info {
+	float: left;
+	line-height: 40px;
+	margin-top: 20px;
+}
+.form-submit button {
+	float: right;
+	margin-top: 20px;
+}
 /* ===== Contacts end ===== */
+/* ===== Map start ===== */
+.map-container {
+	position: relative;
+}
+#map {
+	width: 100%;
+	height: 410px;
+}
+.on-map-block {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .9);
+}
+.map-container:hover .on-map-block {
+	opacity: 0;
+}
+/* ===== Map end ===== */
 /* Custom style end */

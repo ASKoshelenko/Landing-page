@@ -518,6 +518,81 @@
         </div>
       </div>
       <!-- /.reviews bg-black -->
+      <!-- Latest news -->
+      <div class="default-section latest-news">
+        <div class="container">
+          <h3 class="title">Latest news</h3>
+          <a href="#">All News in our blog ></a>
+          <div class="row">
+            <div class="col col-4">
+              <div class="latest-news-item">
+                <img src="img/news-img-1.jpg" alt="">
+                <h3 class="latest-news-title">New web design trends</h3> 
+                <!-- /.latest-news-title -->
+                <div class="latest-news-signature">
+                  <span>John Doe | 10 December</span>
+                </div>
+                <!-- /.latest-news-signature -->
+                <p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
+                <button class="btn btn-small">Read more ></button> 
+                <!-- /.btn btn-small -->
+              </div>
+              <!-- /.latest-news-item -->
+            </div>
+            <!-- /.col col-4 -->
+            <div class="col col-4">
+              <div class="latest-news-item">
+                <img src="img/news-img-2.jpg" alt="">
+                <h3 class="latest-news-title">Minimalistic Design Forever</h3> 
+                <!-- /.latest-news-title -->
+                <div class="latest-news-signature">
+                  <span>John Doe | 9 December</span>
+                </div>
+                <!-- /.latest-news-signature -->
+                <p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
+                <button class="btn btn-small">Read more ></button> 
+                <!-- /.btn btn-small -->
+              </div>
+              <!-- /.latest-news-item -->
+            </div>
+            <!-- /.col col-4 -->
+            <div class="col col-4">
+              <div class="latest-news-item">
+                <img src="img/news-img-3.jpg" alt="">
+                <h3 class="latest-news-title">Hipster’s Style in Web</h3> 
+                <!-- /.latest-news-title -->
+                <div class="latest-news-signature">
+                  <span>John Doe | 7 December</span>
+                </div>
+                <!-- /.latest-news-signature -->
+                <p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. </p>
+                <button class="btn btn-small">Read more ></button> 
+                <!-- /.btn btn-small -->
+              </div>
+              <!-- /.latest-news-item -->
+            </div>
+            <!-- /.col col-4 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.default-section latest-news -->
+      <!-- Stay informed -->
+      <div class="small-section subscribe bg-lightgray">
+        <h3 class="title text-center">Stay informed with our newsletter</h3>
+        <div class="subscribe-form text-center">
+          <input type="text" name="user-email" class="subscribe-form-control" placeholder="Enter email here">  
+          <button type="submit" class="btn btn-default">Subscribe</button>
+          <div class="form-info">
+            <i class="fas fa-info-circle"></i>
+            <span>Please trust us, we will never send you spam</span>
+          </div>
+          <!-- /.form-info -->
+        </div>
+        <!-- /.subscribe-form -->
+      </div>
+      <!-- /.small-section subscribe bg-lightgray -->
       <!-- Contacts start -->
       <div class="default-section contacts">
         <div class="container">
@@ -533,7 +608,7 @@
                     <!-- /.rhomb-icon black-icon -->
                     <div class="contact-item-content">
                       <span class="contact-title">Call us</span>
-                      <span class="contact-data">+380631234567</span>
+                      <span class="contact-data">+61 3 8376 6284</span>
                     </div>
                     <!-- /.contact-item-content -->
                   </div>
@@ -543,12 +618,12 @@
                 <div class="col col-4">
                   <div class="contact-item">
                     <div class="rhomb-icon black-icon">
-                      <i class="fas fa-phone"></i>
+                      <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <!-- /.rhomb-icon black-icon -->
                     <div class="contact-item-content">
-                      <span class="contact-title">Call us</span>
-                      <span class="contact-data">+380631234567</span>
+                      <span class="contact-title">Address</span>
+                      <span class="contact-data">245 Quigley Blvd, Ste K</span>
                     </div>
                     <!-- /.contact-item-content -->
                   </div>
@@ -558,12 +633,12 @@
                 <div class="col col-4">
                   <div class="contact-item">
                     <div class="rhomb-icon black-icon">
-                      <i class="fas fa-phone"></i>
+                      <i class="fas fa-envelope"></i>
                     </div>
                     <!-- /.rhomb-icon black-icon -->
                     <div class="contact-item-content">
-                      <span class="contact-title">Call us</span>
-                      <span class="contact-data">+380631234567</span>
+                      <span class="contact-title">Email</span>
+                      <span class="contact-data">support@bestlooker.pro</span>
                     </div>
                     <!-- /.contact-item-content -->
                   </div>
@@ -586,7 +661,11 @@
                 </div>
                 <!-- /.form-row -->
                 <div class="form-submit">
-                  <!-- form-info -->
+                  <div class="form-info">
+                    <i class="fas fa-info-circle"></i>
+                    <span>All the fields are required</span>
+                  </div>
+                  <!-- /.form-info -->
                   <button type="submit" class="btn btn-default">Submit message</button>
                 </div>
               </div>
@@ -599,8 +678,18 @@
         <!-- /.container -->
       </div>
       <!-- /.default-section contacts -->
+      <!-- Map -->
+      <div class="map-container">
+        <div id="map"></div>
+        <div class="on-map-block"></div>
+      </div>
+      <!-- /.map-container -->
     </div>
     <!-- /#main -->
+    <div id="footer">
+
+    </div>
+    <!-- /#footer -->
 
     <!-- Scripts -->
     <!-- jQuery lib -->
@@ -611,6 +700,11 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Slick slider -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>    
+    <!-- Google maps api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQJ3qk4kYbCbaAmyks5XFzKT0jomyJZMs&callback=initMap"
+    async defer></script>
+    <!-- Google map init -->
+    <script src="js/google-maps.js"></script>
 
     <!-- Init plugins -->
     <script src="js/init.js"></script>
