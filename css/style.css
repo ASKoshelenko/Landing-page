@@ -689,4 +689,36 @@ blockquote span {
 	opacity: 0;
 }
 /* ===== Map end ===== */
+/* =====  Footer start  ===== */
+#footer {
+	padding: 140px 0 60px 0;
+}
+.footer-img {
+	margin-bottom: 24px;
+}
+.footer-social-nav{
+	margin-bottom: 105px;
+}
+.footer-social-nav .rhomb-icon{
+	border: 1px solid #111;
+}
+.footer-social-nav ul li {
+	display: inline-block;
+}
+.footer-social-nav ul li +li {
+	margin-left: 14px;
+}
+.copyright i {
+	font-size: 10px;
+}
+.copyright span {
+	text-transform: uppercase;
+	font-family: 'dosisregular', sans-serif;
+	font-size: 0.8rem;
+	letter-spacing: 0.5em;
+}
+.copyright p {
+	font-size: 10px;
+}
+/* =====  Footer end  ===== */
 /* Custom style end */
