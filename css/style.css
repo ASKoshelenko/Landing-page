@@ -144,6 +144,11 @@ button {
 .bg-black {
 	background-color: #111;
 }
+.mx-auto{
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
 /* Default classes end */
 /* Default component start */
 /* класс который используем, если нужны отступы сверху и снизу блока */
@@ -206,6 +211,41 @@ button {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 1rem;
 	line-height: 1.7333em;
+}
+.rhomb-icon {
+	display: inline-block;
+	width: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size: 0.8rem;
+	transform: rotate(45deg);
+}
+.rhomb-icon > * {
+	transform: rotate(-45deg);
+}
+.rhomb-icon > .fa-phone {
+	transform: rotate(45deg);
+}
+.rhomb-icon.black-icon{
+	color: #fff;
+	background-color: #111;
+}
+.form-control {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 40px;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #777;
+	padding: 0 13px;
+	background-color: #fff;
+}
+textarea.form-control {
+	min-height: 90px;
+	padding-top: 10px;
 }
 /* Default component end */
 /* Custom style start */
@@ -502,4 +542,31 @@ blockquote span {
 	height: 9px;
 }
 /* ===== Reviews end ===== */
+/* ===== Contacts start ===== */
+.contact-item .rhomb-icon{
+	vertical-align: middle;
+}
+.contact-item-content {
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+.contact-item-content span {
+	display: block;	
+}
+.form-row {
+	margin: 0 -5px;
+}
+.form-col {
+	width: 50%;
+	float: left;
+	padding: 0 5px;
+}
+.contact-form {
+	margin-top: 80px;
+}
+.contact-form .form-control + .form-control {
+	margin-top: 10px;
+}
+/* ===== Contacts end ===== */
 /* Custom style end */
