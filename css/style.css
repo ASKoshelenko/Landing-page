@@ -235,7 +235,8 @@ button {
 	background-color: #111;
 }
 .rhomb-icon.transparent-icon {
-	/* требуется переделать общий класс а не только в футере */
+	border: 1px solid #111;
+	background-color: transparent;
 }
 .form-control {
 	width: 100%;
@@ -705,9 +706,11 @@ blockquote span {
 	display: inline-block;
 }
 .on-map-wrapper .rhomb-icon {
+
 	background-color: #fff;
 	line-height: 28px;
 	width: 28px;
+	margin-top: 20px;
 	margin-bottom: 24px;
 }
 .on-map-title {
@@ -723,7 +726,7 @@ blockquote span {
 }
 /* ===== Map end ===== */
 /* =====  Footer start  ===== */
-#footer {
+#footer .container-fluid {
 	padding: 140px 0 60px 0;
 }
 .footer-img {
@@ -733,11 +736,12 @@ blockquote span {
 	margin-bottom: 105px;
 }
 /* при наведении иконки должны менятся в класс .rhomb-icon.black-icon */
-.footer-social-nav .rhomb-icon{
-	border: 1px solid #111;
-}
 .footer-social-nav ul li {
 	display: inline-block;
+}
+.footer-social-nav ul li .rhomb-icon:hover {
+	color: #fff;
+	background-color: #111;
 }
 .footer-social-nav ul li +li {
 	margin-left: 14px;
