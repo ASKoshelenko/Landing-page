@@ -234,6 +234,9 @@ button {
 	color: #fff;
 	background-color: #111;
 }
+.rhomb-icon.transparent-icon {
+	/* требуется переделать общий класс а не только в футере */
+}
 .form-control {
 	width: 100%;
 	border: 1px solid #e5e5e5;
@@ -729,6 +732,7 @@ blockquote span {
 .footer-social-nav{
 	margin-bottom: 105px;
 }
+/* при наведении иконки должны менятся в класс .rhomb-icon.black-icon */
 .footer-social-nav .rhomb-icon{
 	border: 1px solid #111;
 }
