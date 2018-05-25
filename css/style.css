@@ -684,9 +684,39 @@ blockquote span {
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, .9);
+	text-align: center;
+}
+.on-map-block::before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	/* нужен для того чтобы содержимое не 
+	вываливалось за пределы окна */
+	margin-left: -4px;
 }
 .map-container:hover .on-map-block {
 	opacity: 0;
+}
+.on-map-wrapper {
+	display: inline-block;
+}
+.on-map-wrapper .rhomb-icon {
+	background-color: #fff;
+	line-height: 28px;
+	width: 28px;
+	margin-bottom: 24px;
+}
+.on-map-title {
+	letter-spacing: 0.2em;
+}
+.on-map-title h3{
+	font-family: 'dosislight',sans-serif;
+	letter-spacing: .174em;
+	line-height: 1.7333em;
+	color: rgba(255, 255, 255, .7);
+	text-transform: uppercase;
+	display: inline-block;
 }
 /* ===== Map end ===== */
 /* =====  Footer start  ===== */
