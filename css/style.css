@@ -261,6 +261,11 @@ textarea.form-control {
 	min-height: 90px;
 	padding-top: 10px;
 }
+@media (max-width: 576px) {
+	.default-section {
+		padding: 30px 0;
+	}
+}
 /* Default component end */
 /* Custom style start */
 /* ===== #Header start ===== */
@@ -301,6 +306,18 @@ textarea.form-control {
 .header-nav li+ li {
 	margin-left: 30px;
 }
+@media (max-width:991px){
+	#header .header-nav{
+		display: none;
+	}
+	.slicknav_menu {
+		float: right;
+		display: block;
+	}
+	.logo {
+		padding-top: 13px;
+	}
+}
 /* ===== #Header stop ===== */
 /* ===== Inner start ===== */
 .inner {
@@ -330,12 +347,24 @@ textarea.form-control {
 	text-transform: uppercase;
 	text-indent: 1.7em;
 	font-weight: normal;
-	padding-bottom: 90px;
+	margin-bottom: 90px;
 }
 .inner-subtitle {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 1.2667rem;
 	color: rgba(254, 254, 254, .68)
+}
+@media (max-width: 991px) {
+	.inner-title h1 {
+		margin-bottom: 50px;
+		letter-spacing: .7em;
+		text-indent: 0.7em;
+	}
+}
+@media (max-width: 576px) {
+	.inner-title h1 {
+		text-indent: 0;
+	}
 }
 /* ===== Inner stop ===== */
 /* ===== About studio start ===== */
@@ -370,6 +399,16 @@ blockquote span {
 .team-item-role {
 	font-size: 0.8rem;
 }
+@media (max-width: 991px) {
+	.col > *:first-child {
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 767px) {
+	.team-item-photo {
+		text-align: center;
+	}
+}
 /* дома надо задать шрифты размеры и отступы либо от картинки, либо от теста */
 /* ===== About studio end ===== */
 /* ===== Services start ===== */
@@ -399,6 +438,22 @@ blockquote span {
 	font-size: 0.9333rem;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
+}
+@media (max-width: 991px) {
+	.services-tab ul li a span:last-child {
+		letter-spacing: 0.2em;
+	}
+}
+@media (max-width: 767px) {
+	.services-tab ul li{
+		width: 33.333%;
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 576px) {
+	.services-tab ul li{
+		width: 50%;
+	}
 }
 /* ===== Services end ===== */
 /* ===== Lets talk start ===== */
@@ -469,6 +524,23 @@ blockquote span {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
+@media (max-width: 991px) {
+	.portfolio-item {
+		width: 50%;
+	}
+}
+@media (max-width: 767px) {
+	.portfolio-tab ul li{
+		display: block;
+	}
+	.portfolio-tab ul li+ li{
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	.portfolio-item {
+		width: 100%;
+	}
+}
 /* ===== Portfolio end ===== */
 /* ===== Why chose us start ===== */
 .advantage-icon {
@@ -507,7 +579,6 @@ blockquote span {
 	color: rgba(255,255,255, .75);
 }
 .review-wrapper span{
-
 	font-family: 'open_sansregular',sans-serif;
 	text-transform: uppercase;
 	font-size: 0.7333rem;
@@ -561,6 +632,21 @@ blockquote span {
 	width: 9px;
 	height: 9px;
 }
+@media (max-width: 991px) {
+	.review-wrapper {
+		max-width: 550px;
+	}
+}
+@media (max-width: 767px) {
+	.review-wrapper{
+		max-width: 355px;
+	}
+@media (max-width: 576px) {
+	.review-wrapper {
+		font-size: 0.8rem;
+		margin-top: 20px;
+	}
+}
 /* ===== Reviews end ===== */
 /* === Latest news start === */
 .latest-news .container {
@@ -606,6 +692,14 @@ blockquote span {
 .latest-news-item p {
 	margin-bottom: 28px;
 }
+@media (max-width: 991px) {
+	.latest-news-item {
+		padding-top: 30px;
+	}
+	.latest-news .row .col + .col .latest-news-item {
+		border-top: 2px solid #000;
+	}
+}
 /* === Latest news end === */
 /* ===== Subscribe start ===== */
 .subscribe-form-control {
@@ -622,6 +716,12 @@ blockquote span {
 }
 .subscribe-form .form-info{
 	margin-top: 12px;
+}
+@media (max-width: 576px) {
+	.subscribe-form-control {
+		width: 100%;
+		margin-bottom: 10px;
+	}
 }
 /* ===== Subscribe end ===== */
 /* ===== Contacts start ===== */
@@ -671,6 +771,14 @@ blockquote span {
 .form-submit button {
 	float: right;
 	margin-top: 20px;
+}
+@media (max-width: 767px) {
+	.contact-item {
+		text-align: center;
+	}
+	.form-col + .form-col {
+		margin-top: 10px;
+	}
 }
 /* ===== Contacts end ===== */
 /* ===== Map start ===== */
@@ -760,3 +868,183 @@ blockquote span {
 }
 /* =====  Footer end  ===== */
 /* Custom style end */
+
+/* Media */
+/* 
+	large-devices- 1200px; в больше части ноутбуки и большие планшеты в альб ориентации
+
+	medium-devices - < 991px; планшеты 7дюймов в  альб ориентации, 7>больше семи дюймов планшеты в портретная ориентация
+	small-devices- <767px; планшеты 7 дюймов портрет ориентация, планш меньше 7 дюймов альб ориент и мобильные устройства в альб ориентации
+	extra-small-devices- <576; для всех мобильных телефонов
+
+*/
+@media (max-width: 1200px) {
+	.col-lg-1 {
+		width: 8.333333333%
+	}
+	.col-lg-2 {
+		width: 16.666666667%
+	}
+	.col-lg-3 {
+		width: 25%
+	}
+	.col-lg-4 {
+		width: 33.333333333%
+	}
+	.col-lg-5 {
+		width: 41.666666667%
+	}
+	.col-lg-6 {
+		width: 50%
+	}
+	.col-lg-7 {
+		width: 58.333333333%
+	}
+	.col-lg-8 {
+		width: 66.666666667%
+	}
+	.col-lg-9 {
+		width: 75%
+	}
+	.col-lg-10 {
+		width: 83.333333333%
+	}
+	.col-lg-11 {
+		width: 91.666666667%
+	}
+	.col-lg-12 {
+		width: 100%
+	}
+}
+@media (max-width: 991px) {
+	.col-md-1 {
+		width: 8.333333333%
+	}
+	.col-md-2 {
+		width: 16.666666667%
+	}
+	.col-md-3 {
+		width: 25%
+	}
+	.col-md-4 {
+		width: 33.333333333%
+	}
+	.col-md-5 {
+		width: 41.666666667%
+	}
+	.col-md-6 {
+		width: 50%
+	}
+	.col-md-7 {
+		width: 58.333333333%
+	}
+	.col-md-8 {
+		width: 66.666666667%
+	}
+	.col-md-9 {
+		width: 75%
+	}
+	.col-md-10 {
+		width: 83.333333333%
+	}
+	.col-md-11 {
+		width: 91.666666667%
+	}
+	.col-md-12 {
+		width: 100%
+	}
+	.d-none-md {
+		display: none;
+	}
+	.d-block-md {
+		display: block;
+	}
+}
+@media (max-width: 767px) {
+	.col-sm-1 {
+		width: 8.333333333%
+	}
+	.col-sm-2 {
+		width: 16.666666667%
+	}
+	.col-sm-3 {
+		width: 25%
+	}
+	.col-sm-4 {
+		width: 33.333333333%
+	}
+	.col-sm-5 {
+		width: 41.666666667%
+	}
+	.col-sm-6 {
+		width: 50%
+	}
+	.col-sm-7 {
+		width: 58.333333333%
+	}
+	.col-sm-8 {
+		width: 66.666666667%
+	}
+	.col-sm-9 {
+		width: 75%
+	}
+	.col-sm-10 {
+		width: 83.333333333%
+	}
+	.col-sm-11 {
+		width: 91.666666667%
+	}
+	.col-sm-12 {
+		width: 100%
+	}
+	.d-none-sm {
+		display: none;
+	}
+	.d-block-sm {
+		display: block;
+	}
+}
+@media (max-width: 576px) {
+	.col-xs-1 {
+		width: 8.333333333%
+	}
+	.col-xs-2 {
+		width: 16.666666667%
+	}
+	.col-xs-3 {
+		width: 25%
+	}
+	.col-xs-4 {
+		width: 33.333333333%
+	}
+	.col-xs-5 {
+		width: 41.666666667%
+	}
+	.col-xs-6 {
+		width: 50%
+	}
+	.col-xs-7 {
+		width: 58.333333333%
+	}
+	.col-xs-8 {
+		width: 66.666666667%
+	}
+	.col-xs-9 {
+		width: 75%
+	}
+	.col-xs-10 {
+		width: 83.333333333%
+	}
+	.col-xs-11 {
+		width: 91.666666667%
+	}
+	.col-xs-12 {
+		width: 100%
+	}
+	.d-none-xs {
+		display: none;
+	}
+	.d-block-xs {
+		display: block;
+	}
+}
