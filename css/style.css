@@ -171,21 +171,21 @@ button {
 }
 .btn-default {
 	/* стили для черной кнопки */
-	padding: 6px 20px;
+	padding: 6px 19px;
 	background-color: rgba(50, 50, 50);
 	color: #fff;
 	font-size: 0.8667rem;
 }
 .btn-large {
 	/* для кнопок серых и больших */
-	padding: 12px 37px;
+	padding: 7px 39px;
 	background-color: rgba(207, 207, 207, .8);
 	color: #111;
 	font-size: 0.9333rem;
 }
 .btn-small {
 	 /* для мал кнопок*/
-	 padding: 6px 15px;
+	 padding: 2px 12px;
 	 background-color: rgba(229, 229, 229, .8);
 	 color: #777;
 	 font-size: 0.7333rem;
@@ -205,7 +205,6 @@ button {
 	font-family: 'dosislight',sans-serif;
 	letter-spacing: .3em;
 	line-height: 1.7333em;
-	margin-bottom: 20px;
 }
 .title.title-white {
 	color: rgba(255, 255, 255, .7);
@@ -251,6 +250,7 @@ button {
 	background-color: #fff;
 }
 .form-info {
+	font-family: 'open_sansregular', sans-serif;
 	color: #aaa;
 	font-weight: normal;
 	font-size: 0.74rem;
@@ -325,6 +325,7 @@ textarea.form-control {
 	height: 100vh;
 	padding: 15px 15px 0 15px;
 	text-align: center;
+	position: relative;
 }
 .inner::before {
 	content: '';
@@ -354,6 +355,13 @@ textarea.form-control {
 	font-size: 1.2667rem;
 	color: rgba(254, 254, 254, .68)
 }
+.inner .rhomb-icon {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	border-radius: 5px;
+	background-color: #fff;
+}
 @media (max-width: 991px) {
 	.inner-title h1 {
 		margin-bottom: 50px;
@@ -372,7 +380,7 @@ blockquote p {
 	font-family: 'open_sanslight', sans-serif;
 	line-height: 1.58333em;
 	font-size: 1.6rem;
-	padding-bottom: 1.6em;
+	padding-bottom: 0.8333em;
 }
 blockquote span {
 	font-family: 'open_sansregular',sans-serif;
@@ -384,7 +392,7 @@ blockquote span {
 	margin-top: 100px;
 }
 .team-item-info {
-	padding-top: 30px;
+	padding-top: 18px;
 	font-family: 'dosisregular', sans-serif;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
@@ -393,11 +401,14 @@ blockquote span {
 	display: block;
 }
 .team-item-name {
-	font-size: 1rem;	
-	padding-bottom: 15px;
+	font-size: 1rem;
+	text-indent: 0.4em;	
+	padding-bottom: 9px;
 }
 .team-item-role {
 	font-size: 0.8rem;
+	letter-spacing: 0.4em;
+	text-indent: 0.4em;
 }
 @media (max-width: 991px) {
 	.col > *:first-child {
@@ -458,11 +469,14 @@ blockquote span {
 /* ===== Services end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper {
-	padding-top: 140px;
+	padding-top: 130px;
 	padding-bottom: 140px;
 }
+.lets-talk-wrapper .title {
+	margin-bottom: 14px;
+}
 .lets-talk-wrapper p {
-	padding-bottom: 40px;
+	padding-bottom: 37px;
 }
 .lets-talk-img {
 	margin-top: -32px;
@@ -474,7 +488,7 @@ blockquote span {
 /* ===== Lets talk end ===== */
 /* ===== Portfolio start ===== */
 .portfolio{
-	padding-bottom: 15px;
+	padding-bottom: 0;
 }
 .portfolio-text {
 	text-align: center;
@@ -491,12 +505,12 @@ blockquote span {
 .portfolio-tab ul{
 	text-align: center;
 	margin-bottom: 45px;
-	margin-top: 80px;
+	margin-top: 75px;
 }
 .portfolio-tab ul li{
 	font-family: 'dosisregular', sans-serif;
 	display: inline-block;
-	font-size: 0.8667 rem;
+	font-size: 0.8667rem;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 	color: rgba(17,17,17 0.5);
@@ -505,7 +519,7 @@ blockquote span {
 	color: #111;
 }
 .portfolio-tab ul li+ li{
-	margin-left: 80px;
+	margin-left: 60px;
 }
 .portfolio-tab ul li a {
 	outline: 0;
@@ -513,7 +527,7 @@ blockquote span {
 .portfolio-item {
 	float: left;
 	width: 33.3333%;
-	padding: 3px 6px;
+	padding: 2px 4px;
 }
 .portfolio-item img{
 	width: 100%;
@@ -542,22 +556,29 @@ blockquote span {
 	}
 }
 /* ===== Portfolio end ===== */
+/* ===== Start project start ===== */
+.like-our-works .title {
+	margin-bottom: 17px;
+	margin-top: -8px;
+}
+/* ===== Start project end ===== */
 /* ===== Why chose us start ===== */
 .advantage-icon {
-	font-size: 48px;
-	padding-bottom: 35px;
+	font-size: 3.2rem;
+	padding-bottom: 21px;
 }
 .advantage-title {
 	font-family: 'dosisregular', sans-serif;
-	padding-bottom: 33px;
-	font-size: 1rem;
+	padding-bottom: 24px;
+	font-size: 0.9333rem;
 	letter-spacing: 0.4em;
+	text-indent: 0.4em;
 	color: #111;
 	text-transform: uppercase;
 	font-weight: normal;
 }
 .why-choose-us .row + .row {
-	margin-top: 80px;
+	margin-top: 70px;
 }
 /* ===== Why chose us stop ===== */
 /* ===== Reviews start ===== */
@@ -566,6 +587,12 @@ blockquote span {
 }
 .reviews-title{
 	font-size: 2.1333rem;
+}
+.reviews-title span{
+	padding-bottom: 15px;
+}
+.reviews-title .title{
+	margin-bottom: 27px;
 }
 .reviews-carousel{
 	padding-bottom: 140px;
@@ -577,6 +604,9 @@ blockquote span {
 	font-size: 1.2rem;
 	line-height: 1.6667em;
 	color: rgba(255,255,255, .75);
+}
+.review-wrapper p {
+	margin-bottom: 10px;
 }
 .review-wrapper span{
 	font-family: 'open_sansregular',sans-serif;
@@ -660,11 +690,11 @@ blockquote span {
 	text-transform: uppercase;
 	color: #999;
 	position: absolute;
-	top: 0;
-	right: 15px;
+	top: 8px;
+	right: 10px;
 }
 .latest-news-item img{
-	margin-bottom: 30px;
+	margin-bottom: 19px;
 	width: 100%;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -673,14 +703,14 @@ blockquote span {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
-.latest-news-item h3 {
+.latest-news-title {
 	font-family: 'dosisregular', sans-serif;
 	font-size: 1rem;
 	letter-spacing: 0.2em;
 	font-weight: normal;
 	text-transform: uppercase;
 	color: #777;
-	margin-bottom: 15px;
+	margin-bottom: 9px;
 }
 .latest-news-signature {
 	font-family: 'dosisregular', sans-serif;
@@ -688,10 +718,10 @@ blockquote span {
 	letter-spacing: 0.4em;
 	color: #999;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	margin-bottom: 16px;
 }
 .latest-news-item p {
-	margin-bottom: 28px;
+	margin-bottom: 23px;
 }
 @media (max-width: 991px) {
 	.latest-news-item {
@@ -701,8 +731,24 @@ blockquote span {
 		border-top: 2px solid #000;
 	}
 }
+@media (max-width: 576px) {
+	.latest-news .container a{
+		top: 50px;
+	}
+}
 /* === Latest news end === */
 /* ===== Subscribe start ===== */
+.subscribe-title {
+	font-family: 'dosislight', sans-serif;
+	font-size: 1.0667rem;
+	line-height: 1.625em;
+	letter-spacing: 0.3em;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: #111;
+	text-transform: uppercase;
+	font-weight: normal;
+}
 .subscribe-form-control {
 	width: 293px;
 	border: 1px solid #e5e5e5;
@@ -799,6 +845,9 @@ blockquote span {
 	background-color: rgba(0, 0, 0, .9);
 	text-align: center;
 }
+.map-container:hover .on-map-block {
+	opacity: 0;
+}
 .on-map-block::before {
 	content: '';
 	display: inline-block;
@@ -808,30 +857,29 @@ blockquote span {
 	вываливалось за пределы окна */
 	margin-left: -4px;
 }
-.map-container:hover .on-map-block {
-	opacity: 0;
-}
 .on-map-wrapper {
+	text-align: center;
 	display: inline-block;
+	vertical-align: middle;
 }
 .on-map-wrapper .rhomb-icon {
-
+	color: rgba(0, 0, 0, .9);
 	background-color: #fff;
 	line-height: 28px;
 	width: 28px;
 	margin-top: 20px;
-	margin-bottom: 24px;
+	margin-bottom: 26px;
 }
 .on-map-title {
-	letter-spacing: 0.2em;
-}
-.on-map-title h3{
-	font-family: 'dosislight',sans-serif;
-	letter-spacing: .174em;
-	line-height: 1.7333em;
-	color: rgba(255, 255, 255, .7);
+	font-family: 'dosisregular', sans-serif;
+	font-size: 1.0667rem;
+	color: rgba(255, 255, 255, .75);
+	letter-spacing: 0.3em;
+	text-indent: 0.3em;
 	text-transform: uppercase;
-	display: inline-block;
+}
+.on-map-title span {
+	text-indent: 0.1em;
 }
 /* ===== Map end ===== */
 /* =====  Footer start  ===== */
@@ -853,19 +901,23 @@ blockquote span {
 	background-color: #111;
 }
 .footer-social-nav ul li +li {
-	margin-left: 14px;
+	margin-left: 17px;
 }
 .copyright i {
-	font-size: 10px;
+	font-size: 0.5333rem;
+	letter-spacing: 1.25em;
 }
 .copyright span {
 	text-transform: uppercase;
 	font-family: 'dosisregular', sans-serif;
 	font-size: 0.8rem;
 	letter-spacing: 0.5em;
+	text-indent: 1em;
 }
 .copyright p {
-	font-size: 10px;
+	font-family: 'open_sansregular', sans-serif;
+	margin-top: 6px;
+	font-size: 0.8rem;
 }
 /* =====  Footer end  ===== */
 /* Custom style end */
