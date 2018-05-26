@@ -250,7 +250,7 @@ button {
 	padding: 0 13px;
 	background-color: #fff;
 }
-.form-info{
+.form-info {
 	color: #aaa;
 	font-weight: normal;
 	font-size: 0.74rem;
@@ -641,6 +641,7 @@ blockquote span {
 	.review-wrapper{
 		max-width: 355px;
 	}
+}
 @media (max-width: 576px) {
 	.review-wrapper {
 		font-size: 0.8rem;
@@ -916,6 +917,7 @@ blockquote span {
 		width: 100%
 	}
 }
+
 @media (max-width: 991px) {
 	.col-md-1 {
 		width: 8.333333333%
@@ -960,6 +962,7 @@ blockquote span {
 		display: block;
 	}
 }
+
 @media (max-width: 767px) {
 	.col-sm-1 {
 		width: 8.333333333%
@@ -1004,6 +1007,7 @@ blockquote span {
 		display: block;
 	}
 }
+
 @media (max-width: 576px) {
 	.col-xs-1 {
 		width: 8.333333333%
