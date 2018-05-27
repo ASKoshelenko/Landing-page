@@ -237,6 +237,9 @@ button {
 	border: 1px solid #111;
 	background-color: transparent;
 }
+.rhomb-icon.white-icon{
+	background-color: #fff;
+}
 .form-control {
 	width: 100%;
 	border: 1px solid #e5e5e5;
@@ -339,7 +342,7 @@ textarea.form-control {
 	display: inline-block;
 	vertical-align: middle;
 }
-.inner-title h1 {
+.inner-title{
 	font-family: 'dosisregular', sans-serif;
 	font-size: 2rem;
 	letter-spacing: 1.7em;
@@ -347,29 +350,28 @@ textarea.form-control {
 	text-transform: uppercase;
 	text-indent: 1.7em;
 	font-weight: normal;
-	margin-bottom: 90px;
+	margin-bottom: 88px;
 }
 .inner-subtitle {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 1.2667rem;
 	color: rgba(254, 254, 254, .68)
 }
-/* .inner .rhomb-icon {
-	position: absolute;
+.inner .rhomb-icon {
+	position: fixed;
 	left: 50%;
 	bottom: 5%;
 	border-radius: 5px;
-	background-color: #fff;
-} */
+}
 @media (max-width: 991px) {
-	.inner-title h1 {
+	.inner-title{
 		margin-bottom: 50px;
 		letter-spacing: .7em;
 		text-indent: 0.7em;
 	}
 }
 @media (max-width: 576px) {
-	.inner-title h1 {
+	.inner-title{
 		text-indent: 0;
 	}
 }
@@ -863,7 +865,7 @@ blockquote span {
 }
 .on-map-wrapper .rhomb-icon {
 	color: rgba(0, 0, 0, .9);
-	background-color: #fff;
+	/* background-color: #fff; */
 	line-height: 28px;
 	width: 28px;
 	margin-top: 20px;
