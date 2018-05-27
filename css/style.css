@@ -71,6 +71,9 @@ button {
 	border: none;
 	cursor: pointer;
 }
+textarea {
+	resize: vertical;
+}
 /* Grid layout start */
 .container {
 	max-width: 1200px;
@@ -244,7 +247,7 @@ button {
 	width: 100%;
 	border: 1px solid #e5e5e5;
 	border-radius: 2px;
-	height: 40px;
+	height: 36px;
 	font-size: .8rem;
 	text-transform: uppercase;
 	letter-spacing: .2em;
@@ -261,7 +264,7 @@ button {
 	letter-spacing: 0.026em;
 }
 textarea.form-control {
-	min-height: 90px;
+	min-height: 83px;
 	padding-top: 10px;
 }
 @media (max-width: 576px) {
@@ -750,17 +753,8 @@ blockquote span {
 	text-transform: uppercase;
 	font-weight: normal;
 }
-.subscribe-form-control {
+.subscribe-form .form-control {
 	width: 293px;
-	border: 1px solid #e5e5e5;
-	border-radius: 2px;
-	height: 36px;
-	font-size: .8rem;
-	text-transform: uppercase;
-	letter-spacing: .2em;
-	color: #777;
-	padding: 0 13px;
-	background-color: #fff;
 }
 .subscribe-form .form-info{
 	margin-top: 12px;
@@ -806,7 +800,7 @@ blockquote span {
 	padding: 0 5px;
 }
 .contact-form {
-	margin-top: 80px;
+	margin-top: 77px;
 }
 .contact-form .form-control + .form-control {
 	margin-top: 10px;
@@ -814,7 +808,7 @@ blockquote span {
 .form-submit .form-info {
 	float: left;
 	line-height: 40px;
-	margin-top: 20px;
+	margin-top: 17px;
 }
 .form-submit button {
 	float: right;
