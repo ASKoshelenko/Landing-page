@@ -757,6 +757,14 @@ blockquote span {
 .why-choose-us .row + .row {
 	margin-top: 70px;
 }
+@media (max-width: 991px) {
+	.advantage-icon {
+		margin-top: 30px;
+	}
+	.why-choose-us .row + .row {
+		margin-top: 0;
+	}
+}
 /* ===== Why chose us stop ===== */
 /* ===== Reviews start ===== */
 .reviews {	
