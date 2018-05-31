@@ -344,6 +344,7 @@ textarea {
 	text-align: center;
 	letter-spacing: 0.2em;
 	border-radius: 2px;
+	border: 1px solid transparent;
 }
 .btn-default {
 	/* стили для черной кнопки */
@@ -358,6 +359,14 @@ textarea {
 	background-color: rgba(207, 207, 207, .8);
 	color: #111;
 	font-size: 0.9333rem;
+	transition: all .2s ease-in;
+}
+.btn-large:hover {
+	/* box-shadow: 100vw 0px 0px #000 inset; */
+	/* background-color: #000; */
+	color: #fff;
+	border: 1px solid transparent;
+	background: linear-gradient(to right, rgb(0,0,0) 20%, rgb(100,100,100) 70%)
 }
 .btn-small {
 	 /* для мал кнопок*/
@@ -453,7 +462,8 @@ textarea.form-control {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding-top: 26px;
+	padding: 26px 0;
+	z-index: 999;
 }
 .logo {
 	font-family: 'open_sanssemibold', sans-serif;
@@ -504,6 +514,7 @@ textarea.form-control {
 	height: 100vh;
 	padding: 15px 15px 0 15px;
 	text-align: center;
+	position: relative;
 }
 .inner::before {
 	content: '';
@@ -533,12 +544,25 @@ textarea.form-control {
 	font-size: 1.2667rem;
 	color: rgba(254, 254, 254, .68)
 }
-.inner .rhomb-icon {
-	position: fixed;
-	left: 50%;
+.inner-button{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;	
+	border-radius: 4px;
+	transform: rotate(-45deg);
 	bottom: 5%;
-	border-radius: 5px;
+	left: 50%;
+	cursor: pointer;
 }
+.inner-button .fas {
+	position: absolute;
+	bottom: 2px;
+	left: 4px;
+	transform: rotate(45deg);
+	font-size: 0.6667rem;
+}
+
 @media (max-width: 991px) {
 	.inner-title{
 		margin-bottom: 50px;
@@ -567,6 +591,69 @@ blockquote span {
 }
 .about-studio .row + .row {
 	margin-top: 100px;
+}
+.team-item-photo {
+	height: 450px;
+	position: relative;
+	perspective: 2000px;
+}
+.team-item-skills {
+	background-color: #000;
+	transform: rotateY(180deg);	
+	padding: 28px 40px;
+}
+.team-item-skills .title {
+	margin-bottom: 15px;
+}
+.team-item-skills .title.title-light {
+	line-height: 2.1111em;
+}
+.characteristic{
+	font-family: 'open_sansregular',sans-serif;
+	font-size: 0.8667rem;
+	line-height: 1.6153em;
+	margin-bottom: 37px;
+	color: rgba(255, 255, 255, .5)
+}
+.skill-name {
+	font-family: 'open_sansregular',sans-serif;
+	font-size: 0.7333rem;
+	letter-spacing: 0.2em;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+.team-item-skills ul li + li {
+	margin-top: 15px;
+}
+.container-for-flip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	backface-visibility: hidden;
+	transition: all .8s ease;
+}
+.team-item-photo:hover .team-item-front {
+	transform: rotateY(180deg);
+}
+.team-item-photo:hover .team-item-skills {
+	transform: rotateY(360deg);
+}
+.progress-bar {
+	border: 1px solid #fff;
+	height: 12px;
+	width: 100%;
+	position: relative;
+}
+.progress-bar .progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: #fff;
+	transition: all .2s linear
 }
 .team-item-info {
 	padding-top: 18px;
@@ -759,7 +846,8 @@ blockquote span {
 }
 /* ===== Why chose us stop ===== */
 /* ===== Reviews start ===== */
-.reviews {	
+.reviews {
+	overflow: hidden;	
 	padding-top: 140px;
 }
 .reviews-title{
@@ -795,17 +883,44 @@ blockquote span {
 }
 .slick-arrow {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0;
+	height: 100%;
+	width: 90px;
 	z-index: 1;
+	cursor: pointer;
 }
 .slick-arrow.slick-prev {
 	left: 0;
-	top: 0;
 }
 .slick-arrow.slick-next {
 	right: 0;
-	top: 0;
+}
+.slick-arrow .carousel-button {
+	width: 63px;
+	height: 63px;
+	background-color: #fff;
+	transform: rotate(-45deg);
+	position: absolute;
+	/* top: 50% */
+	margin-top: -31px;
+	margin-left: -32px;
+}
+.slick-arrow.slick-next .carousel-button {
+	right: 0;
+	margin-right: -32px;
+}
+.slick-arrow .carousel-button .fa {
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.slick-arrow.slick-prev .carousel-button .fa {
+	bottom: 14px;
+	right: 17px;
+}
+.slick-arrow.slick-next .carousel-button .fa {
+	top: 14px;
+	left: 17px;
 }
 .slick-dots {
 	position: absolute;
@@ -1052,7 +1167,8 @@ blockquote span {
 /* ===== Map end ===== */
 /* =====  Footer start  ===== */
 #footer .container-fluid {
-	padding: 140px 0 60px 0;
+	position: relative;
+	padding: 140px 0 30px 0;
 }
 .footer-img {
 	margin-bottom: 24px;
@@ -1086,6 +1202,15 @@ blockquote span {
 	font-family: 'open_sansregular', sans-serif;
 	margin-top: 6px;
 	font-size: 0.8rem;
+	margin-bottom: 33px;
+}
+.go-home {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	right: 0.8%;
+	font-size: 3.2rem;
+	color: #c6c6c6;
 }
 /* =====  Footer end  ===== */
 /* Custom style end */
@@ -1099,3 +1224,31 @@ blockquote span {
 	extra-small-devices- <576; для всех мобильных телефонов
 
 */
+.animate-opacity {
+	opacity: 0;
+	animation: opacity 0.5s ease-in .5s forwards;
+}
+.animation-scale {
+	transform: scale(0);
+	animation: scale 0.5s ease-in 1s forwards;
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes scale {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
