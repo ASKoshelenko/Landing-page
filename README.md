@@ -1,2 +1,2 @@
 # Landing-page preview
-![Иллюстрация к проекту](https://github.com/ASKoshelenko/Project-Store/blob/master/app/ps_illustration/index_page_progect_store.png)
+![Иллюстрация к проекту](https://github.com/ASKoshelenko/Landing-page-1st-project/blob/master/LandingPage.png)
